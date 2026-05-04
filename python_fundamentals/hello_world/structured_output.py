@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 language = "Python"
-version = 3.8
+version = 3
 pi = 3.14
-is_valid = True
+is_valid = pi == 3.14
 
 print(f"Language: {language}")
 print(f"Version: {version}")
