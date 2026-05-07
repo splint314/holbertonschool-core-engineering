@@ -2,7 +2,7 @@
 
 from  calculator import add, sub, mul, div
 
-if __name__ == "__name__":
+if __name__ == "__main__":
 
     print("{} + {} = {}".format(a, b, add(a, b)))
     print("{} - {} = {}".format(a, b, sub(a, b)))
