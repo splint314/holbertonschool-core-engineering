@@ -3,10 +3,6 @@
 """Module that contains the write_file function"""
 
 
-from fileinput import filename
-from pydoc import text
-
-
 def write_file(filename="", text=""):
 
     """Writes a string to a text file.
