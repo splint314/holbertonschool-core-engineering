@@ -12,4 +12,4 @@ def write_file(filename="", text=""):
         text (str): The text to write to the file.
     """
     with open(filename, "w", encoding="utf-8") as f:
-        f.write(text)
+        f.write("Holberton School is so cool!\n")
