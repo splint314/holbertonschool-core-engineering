@@ -2,8 +2,6 @@
 
 """Append a string to a file"""
 
-from fileinput import filename
-
 
 def append_write(filename="", text=""):
     """Append a string to a file
