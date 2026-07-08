@@ -23,4 +23,3 @@ if __name__ == "__main__":
     message = os.environ.get("WS_MESSAGE", "demo")
     result = asyncio.run(connect_and_send(ws_uri, message))
     sys.stdout.write(result)
-    
