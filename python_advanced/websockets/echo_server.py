@@ -2,14 +2,15 @@
 
 """Minimal WebSocket echo server.
 
-Listens on localhost, accepts multiple client connections,
+Listens on localhost:8765, accepts multiple client connections,
 and echoes back any text message it receives.
 """
+
 import asyncio
 import websockets
 
 
-async def echo(websocket):
+async def connection_handler(websocket):
     """Handle a single client connection.
 
     Continuously receives messages from the client and sends
@@ -21,7 +22,7 @@ async def echo(websocket):
 
 async def main():
     """Start the WebSocket server and run it forever."""
-    async with websockets.serve(echo, "localhost", 8765):
+    async with websockets.serve(connection_handler, "localhost", 8765):
         await asyncio.Future()  # run forever
 
 
