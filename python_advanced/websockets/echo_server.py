@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+
 """Minimal WebSocket echo server.
 
 Listens on localhost, accepts multiple client connections,
